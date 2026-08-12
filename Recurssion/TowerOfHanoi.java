@@ -2,7 +2,7 @@ package Recurssion;
 
 public class TowerOfHanoi {
     public static void main(String[] args){
-        hanoi(4, 'A', 'B', 'C');
+        hanoi(5, 'A', 'B', 'C');
 
     }
     private static void hanoi(int n, char src, char helper, char dest){
