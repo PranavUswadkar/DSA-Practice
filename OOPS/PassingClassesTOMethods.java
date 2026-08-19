@@ -1,10 +1,14 @@
-public class PassingClassesTOMethos{
+
+public class PassingClassesTOMethods{
     public static class Car{
         int seats;
         String name;
         double length;
         String type;
         int torque;
+        void print(){
+            System.out.println(seats + " " + name + " " + length + " " + type + " " + torque);
+        }
     }
     public static void main(String[] args){
         Car c = new Car();
@@ -17,8 +21,11 @@ public class PassingClassesTOMethos{
         change(c);// pass by reference
 
         System.out.println(c.seats);
+
+        c.print();
     }
     public static void change(Car c){
         c.seats = 7;
     }
+
 }
